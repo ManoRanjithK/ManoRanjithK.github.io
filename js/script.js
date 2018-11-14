@@ -1,0 +1,40 @@
+var app = document.getElementById('app');
+
+var typewriter = new Typewriter(app, {
+    loop: true
+});
+
+typewriter.typeString(' Mano Ranjith.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' a perpetual student.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' a nerd.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' a Foodie.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' a Ambivert.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' a Geek.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' a Developer.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' a quora addict.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' that guy.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' not that guy.')
+    .pauseFor(1000)
+    .deleteAll()
+    .typeString(' Mano and I love building things with code :) ')
+    .pauseFor(2500000)
+    .deleteAll()
+    .start();
