@@ -186,6 +186,10 @@ nav > .nav-content > ul > li > .logo {
     background-color: #dcdcdc;
     max-width: none;
 }
+#publications {
+    background-color: #dcdcdc;
+    max-width: none;
+}
 
 footer {
     bottom: 1.2rem;
