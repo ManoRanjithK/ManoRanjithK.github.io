@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 .container_pub {
   width: 95%;
   max-width: 1220px;
