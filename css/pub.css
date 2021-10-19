@@ -1,6 +1,6 @@
-*,
-*::before,
-*::after {
+container_pub,
+container_pub::before,
+container_pub::after {
   box-sizing: border-box;
 }
 
