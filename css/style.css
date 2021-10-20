@@ -100,7 +100,7 @@ nav {
     line-height: 56px;
     min-height: 56px;
     min-width: 100%;
-    overflow-x: auto;
+    position: sticky;
     white-space: nowrap;
 }
 
