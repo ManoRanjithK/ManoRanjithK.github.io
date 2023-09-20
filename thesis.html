@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background-color: #fff;
             margin: 0;
             padding: 0;
         }
@@ -15,29 +15,64 @@
         header {
             background-color: #007acc;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
 
         .logo-container img {
-            width: 100px;
-            height: 100px;
+            max-width: 100%;
+            height: auto;
         }
 
         .page-title-main {
             font-size: 36px;
             font-weight: bold;
-            font-family: 'Georgia', serif; /* Use Georgia font for a more formal look */
-            color: #333; /* Dark gray color for a formal appearance */
-            text-shadow: none; /* Remove text shadow */
+            font-family: 'Georgia', serif; /* Formal serif font */
+            color: #fff;
+            margin-top: 20px;
         }
 
         .page-title-sub {
             font-size: 18px;
+            color: #ff7f00; /* Custom color */
+            font-weight: bold;
         }
 
         /* ... Rest of your CSS ... */
 
+        .content {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .instructions {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: left;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            background-color: #007acc;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
     </style>
 </head>
 <body>
@@ -47,49 +82,46 @@
         </div>
         <div class="page-title">
             <div class="page-title-main">
-                Transcreating Lecture Videos
+                Lipsyncing efforts for transcreating lecture videos in Indian Languages
             </div>
-            <div class="page-title-sub above-640">
+            <div class="page-title-sub">
                 Department of Computer Science and Engineering, IIT Madras
-            </div>
-            <div class="page-title-sub below-640">
-                Department of CSE, IIT Madras
             </div>
         </div>
     </header>
-    
+
     <div class="content">
         <div class="instructions">
             <p><b>Title of the paper:</b> <i>Lip-Syncing efforts for Transcreating lecture videos in Indian Languages</i> (Communicated to SSW 2021)</p>
-            <h2><u>Proposed System 1: Word alignments method</u></h2>
-            <p><b><u>Source Video:</u></b></p>
+            <h2>Proposed System 1: Word alignments method</h2>
+            <p><b>Source Video:</b></p>
             <video controls>
                 <source src="video_files/source_compu_clip_2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p><b><u>Lip-Synced Video:</u></b></p>
+            <p><b>Lip-Synced Video:</b></p>
             <video controls>
                 <source src="video_files/compu_clip_2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <h2><u>Proposed System 2: Word alignments correction using group delay (GD) & spectral flux (SF)</u></h2>
-            <p><b><u>Source Video:</u></b></p>
+            <h2>Proposed System 2: Word alignments correction using group delay (GD) & spectral flux (SF)</h2>
+            <p><b>Source Video:</b></p>
             <video controls>
                 <source src="video_files/source_bio_clip_2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p><b><u>Lip-Synced Video:</u></b></p>
+            <p><b>Lip-Synced Video:</b></p>
             <video controls>
                 <source src="video_files/clip_2_bio.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <h2><u>Google Cloud API based application: ML-Powered Translation</u></h2>
-            <p><b><u>Source Video:</u></b></p>
+            <h2>Google Cloud API based application: ML-Powered Translation</h2>
+            <p><b>Source Video:</b></p>
             <video controls>
                 <source src="video_files/video1s.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
-            <p><b><u>Lip-Synced Video:</u></b></p>
+            <p><b>Lip-Synced Video:</b></p>
             <video controls>
                 <source src="video_files/video1.mp4" type="video/mp4">
                 Your browser does not support the video tag.
