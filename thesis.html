@@ -1,92 +1,127 @@
-
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Lipsyncing efforts for transcreating lecture videos in Indian Languages</title>
-		<meta name="viewport" content="width=device-width" />
-		<link rel="stylesheet" type="text/css" href="css/pcTest.css">
-	</head>
-	<body>
-		<div class="header">
-			<div class="logo-container">
-				<img class='iitm-logo' src="img/iitm-logo.jpg"/>
-			</div>
-			<div class="page-title" >
-				<div class= "page-title-main">
-						Transcreating Lecture Videos
-				</div>
-				<div class= "page-title-sub above-640">
-						Department of Computer Science and Engineering, IIT Madras
-				</div>
-				<div class= "page-title-sub below-640">
-						Department of CSE, IIT Madras
-				</div>
-			</div>
-    
-		</div>
-		<div class="content">
-			<div class="instructions">
-				 Title of the paper: <b> Lip-Syncing efforts for Transcreating lecture videos in Indian Languages </b>
-				<br>(Communicated to SSW 2021)
-				<p class="centeralign"><b> <u>	Proposed System 1: Word alignments method </u></b></p>
-			<br>
-			<br>
-				<p class="leftalign"><b> <u> Source Video: </u></b></p>
-				<video width="640" height="480" controls>
-  				<source src="video_files/source_compu_clip_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lipsyncing efforts for transcreating lecture videos in Indian Languages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
 
-							<p class="leftalign"><b> <u> Lip-Synced Video: </u></b></p>
-				<video width="640" height="480" controls>
-  				<source src="video_files/compu_clip_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
-				<p class="centeralign"><b> <u>	Proposed System 2: Word alignments correction using group delay (GD) & spectral flux (SF) </u></b></p>
-			<br>
-			<br>
-				<p class="leftalign"><b> <u> Source Video: </u></b></p>
-				<video width="640" height="480" controls>
-  				<source src="video_files/source_bio_clip_2.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
+        header {
+            background-color: #007acc;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
 
-							<p class="leftalign"><b> <u> Lip-Synced Video: </u></b></p>
-				<video width="640" height="480" controls>
-  				<source src="video_files/clip_2_bio.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
+        .logo-container img {
+            width: 100px;
+            height: 100px;
+        }
 
-			<p class="centeralign"><b> <u>	Google Cloud API based application: ML-Powered Translation </u></b></p>
-			<br>
-			<br>
-				<p class="leftalign"><b> <u> Source Video: </u></b></p>
-				<video width="640" height="480" controls>
-  				<source src="video_files/video1s.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-                </video>
+        .page-title-main {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-							<p class="leftalign"><b> <u> Lip-Synced Video: </u></b></p>
-				<video width="640" height="480" controls>
-  				<source src="video_files/video1.mp4" type="video/mp4">
+        .page-title-sub {
+            font-size: 18px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #007acc;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="img/iitm-logo.jpg" alt="IIT Madras Logo">
+        </div>
+        <div class="page-title">
+            <div class="page-title-main">
+                Transcreating Lecture Videos
+            </div>
+            <div class="page-title-sub above-640">
+                Department of Computer Science and Engineering, IIT Madras
+            </div>
+            <div class="page-title-sub below-640">
+                Department of CSE, IIT Madras
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="instructions">
+            <p><b>Title of the paper:</b> <i>Lip-Syncing efforts for Transcreating lecture videos in Indian Languages</i> (Communicated to SSW 2021)</p>
+            <h2><u>Proposed System 1: Word alignments method</u></h2>
+            <p><b><u>Source Video:</u></b></p>
+            <video controls>
+                <source src="video_files/source_compu_clip_2.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-                </video>
-				<!-- <div class="left-align">In a country like India, which has a diverse linguistic culture, code-switching is very common. Fluency in
-multiple languages brings in code-switching sub-consciously. Many of the daily-used words in native languages
-have been replaced by their English counterparts (such as fan, switch, light, train, etc.). Further, in the current
-scenario, one is surrounded by people of different linguistic backgrounds. This results in borrowing of words from
-other languages into one's vocabulary. Conversational speech may include sentences, each of which is a mixture
-of words from different languages, or a mixture of sentences from different languages. Such a scenario calls
-for the inclusion of code-switching ability in current TTS systems to produce natural sounding speech. These
-systems should be capable of synthesising code-switched sentences that preserve the original pronunciation of
-the words while maintaining the accent of the speaker.</span>
-			</div> -->
-			
-			
-								
-		<div class="footer">
-		</div>
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="js/code.js"></script>
-		
-	</body></html>
+            </video>
+            <p><b><u>Lip-Synced Video:</u></b></p>
+            <video controls>
+                <source src="video_files/compu_clip_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2><u>Proposed System 2: Word alignments correction using group delay (GD) & spectral flux (SF)</u></h2>
+            <p><b><u>Source Video:</u></b></p>
+            <video controls>
+                <source src="video_files/source_bio_clip_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p><b><u>Lip-Synced Video:</u></b></p>
+            <video controls>
+                <source src="video_files/clip_2_bio.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <h2><u>Google Cloud API based application: ML-Powered Translation</u></h2>
+            <p><b><u>Source Video:</u></b></p>
+            <video controls>
+                <source src="video_files/video1s.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p><b><u>Lip-Synced Video:</u></b></p>
+            <video controls>
+                <source src="video_files/video1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
